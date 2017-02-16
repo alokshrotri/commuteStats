@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-	@app_url = ENV['URL'] || "http://localhost:3000"
+	@app_url = ENV['URL']
   end
 end
