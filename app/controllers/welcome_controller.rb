@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-	@redirecthere = "http://localhost:3000/mystats/show"
+	@app_url = ENV['URL'] || "http://localhost:3000"
   end
 end
