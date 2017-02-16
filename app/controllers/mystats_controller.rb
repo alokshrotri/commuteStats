@@ -50,7 +50,10 @@ class MystatsController < ApplicationController
 		
 		resObj = JSON.parse(response.body)
 		access_token = resObj["access_token"]
+		logger.debug("Find Logs here")
+		logger.debug("Access Token is: '#{access_token}'")
 		athlete_id = resObj["athlete"]["id"]
+		logger.debug("Access Token is: '#{athlete_id}'")
 		@firstname = resObj["athlete"]["firstname"]
 		
 		return access_token,athlete_id
