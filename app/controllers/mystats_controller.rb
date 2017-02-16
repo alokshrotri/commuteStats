@@ -32,7 +32,7 @@ class MystatsController < ApplicationController
 		require 'net/http'
 		require 'uri'
 		
-		client_id = "12820"
+		client_id = ENV['client_id']
 		client_secret = ENV['secret_key']
 		
 		post_data = {"client_id"=>client_id, "client_secret"=>client_secret, "code"=>code}
