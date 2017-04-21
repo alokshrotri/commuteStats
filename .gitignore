@@ -22,3 +22,4 @@
 
 # Ignore all details from application.yml
 /config/application.yml
+/config/secrets.yml

@@ -1,9 +1,13 @@
-<h1>Hello Strava User</h1>
-<br />
-<br />
-<a href="https://www.strava.com/oauth/authorize?client_id=12820&response_type=code&redirect_uri=<%= @app_url %>/mystats/show&scope=view_private&approval_prompt=auto">Login With Strava</a>
-<br />
-<br />
-<p>ENV URL is set as: <%= @app_url %></p>
-
+		<h1>Welcome to My Commute Stats!!</h1>
+		<br />
+		<br />
+		<p>If you have ever wondered how many "Commute" rides have you done or how many kms you rode while commuting, you have come to the right place.</p>
+		<br />
+		<br />
+		<p>Just connect with Strava and find out your commute stats here</p>
+		<br />
+		<br />
+		<a href="https://www.strava.com/oauth/authorize?client_id=12820&response_type=code&redirect_uri=<%= @app_url %>/mystats/show&scope=view_private&approval_prompt=auto"><%= image_tag("/assets/button.png") %></a>
+		<br />
+		<br />
 
