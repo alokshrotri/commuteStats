@@ -68,7 +68,7 @@ class MystatsController < ApplicationController
 		while more_records
 				more_records,distance,count,id = list_activities(access_token,athlete_id,page)
 				total_distance = total_distance + distance.to_f
-				total_count = total_count + count.to_f
+				total_count = total_count + count
 				page = page + 1
 		end
 		
@@ -95,7 +95,7 @@ class MystatsController < ApplicationController
 					query_ahead = false
 					break
 				end
-				if act["commute"] === true
+				if act["commute"] === true and act["type"] === "Ride"
 					distance = distance + act["distance"]
 					count = count + 1	
 					id = act["id"]

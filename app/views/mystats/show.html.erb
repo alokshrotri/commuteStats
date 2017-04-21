@@ -1,5 +1,5 @@
-<h1>Mystats#show</h1>
+<h1>My Commute Stats in 2017</h1>
 <h2><%= @errors %></h2>
 
 <p>All Commute Activities count: <%= @all_commute_count %></p>
-<p>All Commute Distance:<%= @all_commute_distance/1000 %> KMs</p>
+<p>All Commute Distance:<%= number_with_precision(@all_commute_distance/1000, precision: 2) %> KMs</p>

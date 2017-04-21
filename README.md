@@ -1,24 +1,4 @@
-# README
+This is a small web app for Strava users. If you regularly commute by bicycle and want to know the count or total commute distance, you can
+connect to this app using Strava login and get the details. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Just login with Strava credentials. 
