@@ -43,6 +43,8 @@ end
 group :production do
 	# Not sqlite db but pg for heroku
 	gem 'pg'
+	# Alok - Adding to see if error is solved. 
+	gem 'rails_12factor'
 end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
